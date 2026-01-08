@@ -17,7 +17,7 @@ async function seedDatabase() {
         "/images/zamzam-perfumes.png",
         "/images/zamzam-features.png"
       ],
-      platform: "iOS/Android & Web",
+      platform: "2025 | iOS/Android & Web",
       link: "https://play.google.com/store/apps/details?id=co.shopney.zamzamelectronics&hl=en"
     });
     await storage.createProject({
@@ -29,7 +29,7 @@ async function seedDatabase() {
         "/images/danube-app-ios.png",
         "/images/danube-app-android.png"
       ],
-      platform: "iOS/Android & Web",
+      platform: "2025 | iOS/Android & Web",
       link: "https://danubeproperties.com/"
     });
     await storage.createProject({
