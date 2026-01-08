@@ -46,7 +46,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-white hover:text-background transition-all hover:shadow-lg hover:shadow-primary/25"
             >
-              Hire Me
+              WhatsApp Us
             </a>
           </div>
 
