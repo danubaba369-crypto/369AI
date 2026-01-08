@@ -117,8 +117,8 @@ export default function Home() {
               },
               {
                 icon: <Database className="w-8 h-8 text-primary" />,
-                title: "Premium Retail Portals",
-                description: "Specialized platforms for high-end retail and luxury products, featuring premium brand storytelling and elegant product showcases."
+                title: "Social Media Management",
+                description: "Comprehensive content strategy and account management for high-traffic brands on YouTube, Facebook, and TikTok."
               }
             ].map((service, i) => (
               <motion.div
