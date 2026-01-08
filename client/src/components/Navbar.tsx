@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import logoImg from "@assets/generated_images/modern_minimalist_ai_logo_369.png";
+import logoImg from "/images/logo-369.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
+            <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
               <img src={logoImg} alt="369 AI Ventures Logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-display font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors">

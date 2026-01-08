@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-primary-foreground font-bold">
-                369
+              <div className="w-10 h-10 rounded-lg overflow-hidden bg-primary flex items-center justify-center text-primary-foreground font-bold">
+                <img src="/images/logo-369.png" alt="Logo" className="w-full h-full object-cover" />
               </div>
               <span className="font-display font-bold text-xl text-white">
                 369 AI Ventures
