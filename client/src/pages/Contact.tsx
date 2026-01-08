@@ -59,8 +59,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-bold text-white mb-1">Email Me</h3>
                     <p className="text-muted-foreground mb-2">Online support</p>
-                    <a href="mailto:contact@engrahmed.com" className="text-lg font-medium text-white hover:text-primary transition-colors">
-                      contact@engrahmed.com
+                    <a href="mailto:info@369Aiventures.com" className="text-lg font-medium text-white hover:text-primary transition-colors">
+                      info@369Aiventures.com
                     </a>
                   </div>
                 </div>

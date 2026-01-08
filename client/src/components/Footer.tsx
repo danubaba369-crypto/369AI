@@ -44,6 +44,12 @@ export function Footer() {
                 <span>KK Residencies H-13<br/>Islamabad, Pakistan</span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
+                <Mail className="w-5 h-5 text-primary shrink-0" />
+                <a href="mailto:info@369Aiventures.com" className="hover:text-white transition-colors">
+                  info@369Aiventures.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a href="https://wa.me/923205992687" className="hover:text-white transition-colors">
                   +92 320 5992687
