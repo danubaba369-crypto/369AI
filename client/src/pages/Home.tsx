@@ -4,7 +4,7 @@ import { useProjects } from "@/hooks/use-projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Smartphone, Code, Database, ChevronRight } from "lucide-react";
+import { ArrowRight, Smartphone, Code, Database, ChevronRight, Globe } from "lucide-react";
 
 // Images from user request
 import heroBg from "/images/zamzam-banner.png"; // Assuming dynamic for now based on instructions, but imported as string for src
