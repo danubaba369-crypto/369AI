@@ -46,7 +46,6 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-bold text-white mb-1">Office Location</h3>
                     <p className="text-muted-foreground text-lg">
-                      KK Residencies H-13<br/>
                       Islamabad, Pakistan
                     </p>
                   </div>
