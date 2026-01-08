@@ -112,13 +112,13 @@ export default function Home() {
               },
               {
                 icon: <Globe className="w-8 h-8 text-primary" />,
-                title: "Web Development",
-                description: "Modern, responsive websites and web applications using React, Next.js, and TypeScript."
+                title: "E-commerce Solutions",
+                description: "Full-scale online stores with real-time inventory, secure checkout, and multi-category management as seen in ZamZam Electronics."
               },
               {
                 icon: <Database className="w-8 h-8 text-primary" />,
-                title: "Backend Solutions",
-                description: "Scalable server-side architectures, API design, and database management."
+                title: "Property & Luxury Portals",
+                description: "Specialized platforms for real estate (Zamelect Properties) and premium retail (ZamZam Perfumes)."
               }
             ].map((service, i) => (
               <motion.div
