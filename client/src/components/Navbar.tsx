@@ -19,10 +19,10 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-orange-500 flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
-              EA
+              369
             </div>
             <span className="font-display font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors">
-              Engr Ahmed
+              369 AI Ventures
             </span>
           </Link>
 

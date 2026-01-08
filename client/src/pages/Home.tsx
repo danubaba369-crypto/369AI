@@ -37,11 +37,11 @@ export default function Home() {
                 Available for new projects
               </div>
               <h1 className="text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
-                Data Mobile App <br />
-                <span className="text-gradient">& Web Development</span>
+                369 AI <br />
+                <span className="text-gradient">Ventures</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                Expert software engineering solutions by Engr Ahmed. Specializing in high-performance mobile applications for ZamZam Electronics and beyond.
+                Expert software engineering solutions by 369 AI Ventures. Specializing in high-performance mobile applications for ZamZam Electronics and beyond.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">

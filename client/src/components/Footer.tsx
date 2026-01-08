@@ -9,10 +9,10 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2 mb-6">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-primary-foreground font-bold">
-                EA
+                369
               </div>
               <span className="font-display font-bold text-xl text-white">
-                Engr Ahmed
+                369 AI Ventures
               </span>
             </Link>
             <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -55,7 +55,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Engr Ahmed. All rights reserved.
+            © {new Date().getFullYear()} 369 AI Ventures. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-white transition-colors">
