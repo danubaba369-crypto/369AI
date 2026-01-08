@@ -162,8 +162,8 @@ export default function Home() {
               ))}
             </div>
           ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects?.slice(0, 3).map((project, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {projects?.map((project, index) => (
                 <ProjectCard key={project.id} project={project} index={index} />
               ))}
             </div>
