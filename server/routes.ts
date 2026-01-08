@@ -8,14 +8,13 @@ async function seedDatabase() {
   if (existingProjects.length === 0) {
     await storage.createProject({
       title: "ZamZam Electronics",
-      description: "A comprehensive e-commerce solution featuring a mobile application and a responsive website. The platform includes real estate and perfume sections, demonstrating versatile development capabilities.",
+      description: "A comprehensive e-commerce solution featuring a mobile application and a responsive website. The platform demonstrates versatile development capabilities across retail and luxury sectors.",
       category: "Mobile App & Web Development",
       imageUrl: "/images/zamzam-poster.png",
       gallery: [
         "/images/zamzam-website.png",
         "/images/zamzam-banner.png",
         "/images/zamzam-perfumes.png",
-        "/images/danube-properties.png",
         "/images/zamzam-features.png"
       ],
       platform: "iOS/Android & Web",

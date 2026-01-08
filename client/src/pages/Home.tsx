@@ -117,8 +117,8 @@ export default function Home() {
               },
               {
                 icon: <Database className="w-8 h-8 text-primary" />,
-                title: "Property & Luxury Portals",
-                description: "Specialized platforms for real estate (Zamelect Properties) and premium retail (ZamZam Perfumes)."
+                title: "Premium Retail Portals",
+                description: "Specialized platforms for high-end retail and luxury products, featuring premium brand storytelling and elegant product showcases."
               }
             ].map((service, i) => (
               <motion.div
