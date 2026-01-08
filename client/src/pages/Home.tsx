@@ -49,13 +49,13 @@ export default function Home() {
                   href="/projects"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-lg hover:bg-white hover:text-black transition-all hover:translate-y-[-2px] hover:shadow-lg hover:shadow-primary/25"
                 >
-                  View My Work
+                  View Our Work
                 </Link>
                 <Link 
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all backdrop-blur-sm"
                 >
-                  Contact Me
+                  Contact Us
                 </Link>
               </div>
             </motion.div>
