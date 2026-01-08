@@ -48,6 +48,25 @@ async function seedDatabase() {
       platform: "Branding / Year 2025",
       link: "#"
     });
+    await storage.createProject({
+      title: "Social Media & Content Strategy",
+      description: "Comprehensive social media management and content strategy for major brands. Handling high-traffic accounts across YouTube, Facebook, and TikTok, with a focus on engagement and viral content growth.",
+      category: "Social Media Management",
+      imageUrl: "/images/social/zamzam-brothers-yt.png",
+      gallery: [
+        "/images/social/daily-dharti-yt.png",
+        "/images/social/zr-bazzar-yt.png",
+        "/images/social/369-ai-yt.png",
+        "/images/social/danu-baba-yt.png",
+        "/images/social/sohail-laptops-yt.png",
+        "/images/social/zr-bazzar-fb.png",
+        "/images/social/daily-dharti-fb.png",
+        "/images/social/zamzam-electronics-fb.png",
+        "/images/social/zamzam-brothers-tt.png"
+      ],
+      platform: "2025 | YT/FB/TikTok Management",
+      link: "#"
+    });
   }
 }
 
