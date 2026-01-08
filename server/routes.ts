@@ -20,6 +20,18 @@ async function seedDatabase() {
       platform: "iOS/Android & Web",
       link: "https://play.google.com/store/apps/details?id=co.shopney.zamzamelectronics&hl=en"
     });
+    await storage.createProject({
+      title: "Danube Properties",
+      description: "A premium real estate platform featuring a high-performance mobile application (Danube One) and a comprehensive web portal for property management and investor relations.",
+      category: "Mobile App & Web Development",
+      imageUrl: "/images/danube-website.png",
+      gallery: [
+        "/images/danube-app-ios.png",
+        "/images/danube-app-android.png"
+      ],
+      platform: "iOS/Android & Web",
+      link: "https://danubeproperties.com/"
+    });
   }
 }
 
