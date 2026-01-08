@@ -32,6 +32,22 @@ async function seedDatabase() {
       platform: "iOS/Android & Web",
       link: "https://danubeproperties.com/"
     });
+    await storage.createProject({
+      title: "369 AI Ventures - Identity Design",
+      description: "A comprehensive brand identity showcase for 2025, featuring high-end logo designs for diverse sectors including retail, technology, and real estate. Each design reflects our commitment to 'Fueling Vision with Value'.",
+      category: "Identity Design & Branding",
+      imageUrl: "/images/logos/ahsan-mobiles.png",
+      gallery: [
+        "/images/logos/al-hajj-mobiles.png",
+        "/images/logos/al-hashir-real-estate.png",
+        "/images/logos/game-world.png",
+        "/images/logos/gamer-tech.png",
+        "/images/logos/huniza-computer.png",
+        "/images/logos/smart-mobiles.png"
+      ],
+      platform: "Branding / Year 2025",
+      link: "#"
+    });
   }
 }
 
