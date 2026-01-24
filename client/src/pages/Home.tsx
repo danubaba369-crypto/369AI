@@ -70,8 +70,8 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent z-10 pointer-events-none" />
                 <img 
-                  src="/images/niswah/hero.png" 
-                  alt="Niswah Thrift Store" 
+                  src="/images/niswah/products.png" 
+                  alt="Niswah Thrift Store - Bridal Collection" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
