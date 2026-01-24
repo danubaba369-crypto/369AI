@@ -41,7 +41,7 @@ export default function Home() {
                 <span className="text-gradient">Ventures</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                Expert software engineering solutions by 369 AI Ventures. Specializing in high-performance mobile applications for ZamZam Electronics and beyond.
+                Expert software engineering solutions by 369 AI Ventures. Specializing in high-performance e-commerce platforms and mobile applications.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -70,8 +70,8 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent z-10 pointer-events-none" />
                 <img 
-                  src="/images/zamzam-poster.png" 
-                  alt="ZamZam Poster" 
+                  src="/images/niswah/hero.png" 
+                  alt="Niswah Thrift Store" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -80,11 +80,11 @@ export default function Home() {
               <div className="absolute -bottom-6 -left-6 bg-secondary/80 backdrop-blur-md border border-white/10 p-6 rounded-2xl shadow-xl max-w-xs">
                 <div className="flex items-center gap-4 mb-2">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
-                    <Smartphone size={20} />
+                    <Globe size={20} />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold">Mobile Expert</h4>
-                    <p className="text-xs text-muted-foreground">iOS & Android Solutions</p>
+                    <h4 className="text-white font-bold">E-commerce Expert</h4>
+                    <p className="text-xs text-muted-foreground">Web & Mobile Solutions</p>
                   </div>
                 </div>
               </div>

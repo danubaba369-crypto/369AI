@@ -5,6 +5,19 @@ import { api } from "@shared/routes";
 
 const allProjects = [
   {
+    title: "Niswah Thrift Store",
+    description: "A luxury bridal and formal wear e-commerce platform. Features premium collections, rental services, and elegant product storytelling for high-end fashion.",
+    category: "E-commerce & Web Development",
+    imageUrl: "/images/niswah/hero.png",
+    gallery: [
+      "/images/niswah/gallery1.png",
+      "/images/niswah/gallery2.png",
+      "/images/niswah/gallery3.png"
+    ],
+    platform: "2026 | Web Platform",
+    link: "https://www.niswahthriftstore.com/"
+  },
+  {
     title: "ZamZam Electronics",
     description: "A comprehensive e-commerce solution featuring a mobile application and a responsive website. The platform demonstrates versatile development capabilities across retail and luxury sectors.",
     category: "Mobile App & Web Development",
@@ -65,19 +78,6 @@ const allProjects = [
     ],
     platform: "2025 | YT/FB/TikTok Management",
     link: "#"
-  },
-  {
-    title: "Niswah Thrift Store",
-    description: "A luxury bridal and formal wear e-commerce platform. Features premium collections, rental services, and elegant product storytelling for high-end fashion.",
-    category: "E-commerce & Web Development",
-    imageUrl: "/images/niswah/hero.png",
-    gallery: [
-      "/images/niswah/gallery1.png",
-      "/images/niswah/gallery2.png",
-      "/images/niswah/gallery3.png"
-    ],
-    platform: "2026 | Web Platform",
-    link: "https://www.niswahthriftstore.com/"
   },
   {
     title: "Sohail Laptops Islamabad",
