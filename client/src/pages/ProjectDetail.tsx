@@ -3,7 +3,7 @@ import { useProject } from "@/hooks/use-projects";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Link } from "wouter";
-import { ArrowLeft, ExternalLink, Smartphone, Globe, Calendar, Layers } from "lucide-react";
+import { ArrowLeft, ExternalLink, Globe, Info, Layers, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function ProjectDetail() {
@@ -85,7 +85,7 @@ export default function ProjectDetail() {
 
         {/* Project Info Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 bg-secondary rounded-2xl border border-white/5">
               <div className="flex items-center gap-3 mb-2 text-primary">
                 <Layers size={24} />
@@ -104,18 +104,50 @@ export default function ProjectDetail() {
 
             <div className="p-6 bg-secondary rounded-2xl border border-white/5">
               <div className="flex items-center gap-3 mb-2 text-primary">
-                <Calendar size={24} />
-                <span className="font-bold">Year</span>
-              </div>
-              <p className="text-white font-medium">2024</p>
-            </div>
-
-            <div className="p-6 bg-secondary rounded-2xl border border-white/5">
-              <div className="flex items-center gap-3 mb-2 text-primary">
-                <Smartphone size={24} />
+                <CheckCircle size={24} />
                 <span className="font-bold">Status</span>
               </div>
               <p className="text-white font-medium">Completed</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Project Description & Details */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+          <div className="bg-secondary/50 rounded-3xl p-8 lg:p-12 border border-white/5">
+            <div className="flex items-center gap-3 mb-6 text-primary">
+              <Info size={28} />
+              <h2 className="text-2xl font-display font-bold text-white">Project Information</h2>
+            </div>
+            <div className="prose prose-invert max-w-none">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                This project was developed by 369 AI Ventures to deliver a high-performance solution tailored to the client's specific needs. Our team focused on creating an intuitive user experience, robust backend architecture, and a visually stunning interface that aligns with modern industry standards.
+              </p>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-white font-bold mb-4">Key Features</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Custom Design Architecture
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Responsive Across All Devices
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      High Performance Optimization
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-white font-bold mb-4">Our Approach</h3>
+                  <p className="text-muted-foreground">
+                    Leveraging the latest technologies, we ensured that {project.title} provides a seamless experience for its users while maintaining the brand's premium identity.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
