@@ -105,11 +105,17 @@ async function seedDatabase() {
 }
 
 export async function registerRoutes(
-  httpServer: Server,
   app: Express
-): Promise<Server> {
+): Promise<void> {
   // Seed the database
-  await seedDatabase();
+  // In production/vercel, we might have multiple instances, 
+  // so seeding should be handled carefully.
+  // For now, let's keep it but handle errors.
+  try {
+    await seedDatabase();
+  } catch (e) {
+    console.error("Seeding failed:", e);
+  }
 
   app.get(api.projects.list.path, async (req, res) => {
     const projects = await storage.getProjects();
@@ -162,6 +168,4 @@ export async function registerRoutes(
       res.status(401).json({ message: 'Invalid password' });
     }
   });
-
-  return httpServer;
 }
