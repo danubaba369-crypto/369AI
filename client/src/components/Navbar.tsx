@@ -20,10 +20,10 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
-              <img src={logoImg} alt="369 AI Ventures Logo" className="w-full h-full object-cover" />
+              <img src={logoImg} alt="369AIventures Logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-display font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors">
-              369 AI Ventures
+              369AIventures
             </span>
           </Link>
 

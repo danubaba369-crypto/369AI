@@ -44,7 +44,7 @@ const allProjects = [
     link: "https://danubeproperties.com/"
   },
   {
-    title: "369 AI Ventures - Identity Design",
+    title: "369AIventures - Identity Design",
     description: "A comprehensive brand identity showcase for 2025, featuring high-end logo designs for diverse sectors including retail, technology, and real estate.",
     category: "Identity Design & Branding",
     imageUrl: "/images/logos/ahsan-mobiles.png",
@@ -100,7 +100,6 @@ async function seedDatabase() {
   for (const project of allProjects) {
     if (!existingTitles.includes(project.title)) {
       await storage.createProject(project);
-      console.log(`Seeded project: ${project.title}`);
     }
   }
 }
@@ -123,6 +122,45 @@ export async function registerRoutes(
       return res.status(404).json({ message: 'Project not found' });
     }
     res.json(project);
+  });
+
+  app.post(api.projects.create.path, async (req, res) => {
+    try {
+      const project = await storage.createProject(req.body);
+      res.status(201).json(project);
+    } catch (err: any) {
+      res.status(400).json({ message: err.message });
+    }
+  });
+
+  app.patch(api.projects.update.path, async (req, res) => {
+    try {
+      const project = await storage.updateProject(Number(req.params.id), req.body);
+      if (!project) {
+        return res.status(404).json({ message: 'Project not found' });
+      }
+      res.json(project);
+    } catch (err: any) {
+      res.status(400).json({ message: err.message });
+    }
+  });
+
+  app.delete(api.projects.delete.path, async (req, res) => {
+    const success = await storage.deleteProject(Number(req.params.id));
+    if (!success) {
+      return res.status(404).json({ message: 'Project not found' });
+    }
+    res.status(204).send();
+  });
+
+  app.post(api.admin.login.path, async (req, res) => {
+    const { password } = req.body;
+    // Simple static password for now. In a real app, use environment variables.
+    if (password === '369admin2025') {
+      res.json({ success: true });
+    } else {
+      res.status(401).json({ message: 'Invalid password' });
+    }
   });
 
   return httpServer;

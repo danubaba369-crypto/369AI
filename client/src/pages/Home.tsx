@@ -37,11 +37,11 @@ export default function Home() {
                 Available for new projects
               </div>
               <h1 className="text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
-                369 AI <br />
-                <span className="text-gradient">Ventures</span>
+                369AI <br />
+                <span className="text-gradient">ventures</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                Expert software engineering solutions by 369 AI Ventures. Specializing in high-performance e-commerce platforms and mobile applications.
+                Expert software engineering solutions by 369AIventures. Specializing in high-performance e-commerce platforms and mobile applications.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">

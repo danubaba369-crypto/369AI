@@ -121,7 +121,7 @@ export default function ProjectDetail() {
             </div>
             <div className="prose prose-invert max-w-none">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                This project was developed by 369 AI Ventures to deliver a high-performance solution tailored to the client's specific needs. Our team focused on creating an intuitive user experience, robust backend architecture, and a visually stunning interface that aligns with modern industry standards.
+                This project was developed by 369AIventures to deliver a high-performance solution tailored to the client's specific needs. Our team focused on creating an intuitive user experience, robust backend architecture, and a visually stunning interface that aligns with modern industry standards.
               </p>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>

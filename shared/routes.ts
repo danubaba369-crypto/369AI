@@ -11,11 +11,44 @@ export const api = {
       },
     },
     get: {
-      method: 'GET' as const,
-      path: '/api/projects/:id',
+      method: "GET" as const,
+      path: "/api/projects/:id",
       responses: {
         200: z.custom<typeof projects.$inferSelect>(),
         404: z.object({ message: z.string() }),
+      },
+    },
+    create: {
+      method: "POST" as const,
+      path: "/api/projects",
+      responses: {
+        201: z.custom<typeof projects.$inferSelect>(),
+      },
+    },
+    update: {
+      method: "PATCH" as const,
+      path: "/api/projects/:id",
+      responses: {
+        200: z.custom<typeof projects.$inferSelect>(),
+        404: z.object({ message: z.string() }),
+      },
+    },
+    delete: {
+      method: "DELETE" as const,
+      path: "/api/projects/:id",
+      responses: {
+        204: z.null(),
+        404: z.object({ message: z.string() }),
+      },
+    },
+  },
+  admin: {
+    login: {
+      method: "POST" as const,
+      path: "/api/admin/login",
+      responses: {
+        200: z.object({ success: z.boolean() }),
+        401: z.object({ message: z.string() }),
       },
     },
   },

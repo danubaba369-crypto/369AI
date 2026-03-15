@@ -14,6 +14,8 @@ export const projects = pgTable("projects", {
 });
 
 export const insertProjectSchema = createInsertSchema(projects);
+export const patchProjectSchema = insertProjectSchema.partial();
 
 export type Project = typeof projects.$inferSelect;
 export type InsertProject = z.infer<typeof insertProjectSchema>;
+export type PatchProject = z.infer<typeof patchProjectSchema>;

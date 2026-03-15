@@ -12,7 +12,7 @@ export function Footer() {
                 <img src="/images/logo-369.png" alt="Logo" className="w-full h-full object-cover" />
               </div>
               <span className="font-display font-bold text-xl text-white">
-                369 AI Ventures
+                369AIventures
               </span>
             </Link>
             <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -45,8 +45,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:info@369Aiventures.com" className="hover:text-white transition-colors">
-                  info@369Aiventures.com
+                <a href="mailto:info@369AIventures.com" className="hover:text-white transition-colors">
+                  info@369AIventures.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
@@ -61,7 +61,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} 369 AI Ventures. All rights reserved.
+            © {new Date().getFullYear()} 369AIventures. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-white transition-colors">
