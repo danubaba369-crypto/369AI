@@ -94,13 +94,23 @@ const allProjects = [
 ];
 
 async function seedDatabase() {
-  const existingProjects = await storage.getProjects();
-  const existingTitles = existingProjects.map(p => p.title);
-  
-  for (const project of allProjects) {
-    if (!existingTitles.includes(project.title)) {
-      await storage.createProject(project);
+  try {
+    const existingProjects = await storage.getProjects();
+    const existingTitles = new Set(existingProjects.map(p => p.title));
+    
+    console.log(`[database] checking seeding: ${existingProjects.length} projects found`);
+    
+    for (const project of allProjects) {
+      if (!existingTitles.has(project.title)) {
+        console.log(`[database] seeding project: ${project.title}`);
+        await storage.createProject(project);
+      }
     }
+    
+    const finalCount = (await storage.getProjects()).length;
+    console.log(`[database] seeding complete: ${finalCount} total projects`);
+  } catch (e) {
+    console.error("[database] seeding error:", e);
   }
 }
 
